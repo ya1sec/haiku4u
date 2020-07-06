@@ -79,14 +79,12 @@ input[type="checkbox"] {
 .result-container {
   background-color: black;
   color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
   position: relative;
   font-size: 12px;
   letter-spacing: 1px;
   padding: 12px 10px;
-  height: 50px;
+  height: 70px;
   width: 100%;
   overflow: auto;
   font-family: "JetBrains Mono", monospace;

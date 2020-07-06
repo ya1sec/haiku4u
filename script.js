@@ -138,3 +138,19 @@ function randomSpecial() {
 // console.log(randomUpper());
 // console.log(randomNumber());
 // console.log(randomSpecial());
+
+// DEFINE VARIABLES
+
+// RANDOMLY SELECT A WORD FROM EACH SYLLABLE ARRAY
+
+// make possible function combinations for each line
+
+// 5 - 7 - 5
+
+// LINE 1 = 5
+
+// LINE 2 = 7
+
+// LINE 3 = 5
+
+// APPEND EACH LINE TO THE RESULT
