@@ -1026,6 +1026,11 @@ var line1text = line1.innerHTML;
 var line2text = line2.innerHTML;
 var line3text = line3.innerHTML;
 
+// add event listener for generate button
+generateElement.addEventListener("click", () => {
+  return haiku();
+});
+
 // RANDOMLY SELECT A WORD FROM EACH SYLLABLE ARRAY
 
 var rand1index = Math.floor(Math.random() * oneSyl.length);
