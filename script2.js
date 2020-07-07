@@ -1022,14 +1022,14 @@ const generateElement = document.getElementById("generate");
 const clipboardElement = document.getElementById("clipboard");
 const title = document.getElementById("haikutitle");
 
-var line1text = line1.innerText;
-var line2text = line2.innerText;
-var line3text = line3.innerText;
+var line1text = line1.innerHTML;
+var line2text = line2.innerHTML;
+var line3text = line3.innerHTML;
 
 // RANDOMLY SELECT A WORD FROM EACH SYLLABLE ARRAY
 
 var rand1index = Math.floor(Math.random() * oneSyl.length);
-var rand1 = oneSyl[rand1index];
+var rand1 = oneSyl[rand1index++];
 
 var rand2index = Math.floor(Math.random() * twoSyl.length);
 var rand2 = twoSyl[rand2index];
@@ -1062,10 +1062,15 @@ console.log(rand5 + " " + rand1 + " " + rand1);
 
 // APPEND EACH LINE TO THE RESULT
 function haiku() {
-  line1.innerText = rand2 + " " + rand3;
-  line2.innerText = rand1 + " " + rand6;
-  line3.innerText = rand5;
-  title.innerText = rand4;
+  line1.innerHTML = rand1 + " " + rand3;
+  line2.innerHTML = rand5 + " " + rand2;
+  line3.innerHTML = rand4;
+  title.innerHTML = rand4;
+
+  //   line1.innerText = rand1 + " " + rand2;
+  //   line2.innerText = rand3 + " " + rand5;
+  //   line3.innerText = rand6 + " " + rand1 + " " + rand1;
+  //   title.innerText = rand4;
 }
 
 // generateElement.addEventListener("click", function () {
