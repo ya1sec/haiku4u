@@ -1015,12 +1015,12 @@ var sixSyl = ["hallucinatory", "responsibility", "unfortunately,"];
 
 var sevenSyl = "irresponsibility";
 
-const line1 = document.getElementById("result");
-const line2 = document.getElementById("result2");
-const line3 = document.getElementById("result3");
-const generateElement = document.getElementById("generate");
-const clipboardElement = document.getElementById("clipboard");
-const title = document.getElementById("haikutitle");
+var line1 = document.getElementById("result");
+var line2 = document.getElementById("result2");
+var line3 = document.getElementById("result3");
+var generateElement = document.getElementById("generate");
+var clipboardElement = document.getElementById("clipboard");
+var title = document.getElementById("haikutitle");
 
 var line1text = line1.innerHTML;
 var line2text = line2.innerHTML;
@@ -1034,7 +1034,7 @@ generateElement.addEventListener("click", () => {
 // RANDOMLY SELECT A WORD FROM EACH SYLLABLE ARRAY
 
 var rand1index = Math.floor(Math.random() * oneSyl.length);
-var rand1 = oneSyl[rand1index++];
+var rand1 = oneSyl[rand1index];
 
 var rand2index = Math.floor(Math.random() * twoSyl.length);
 var rand2 = twoSyl[rand2index];
@@ -1084,6 +1084,6 @@ function haiku() {
 
 // IF RESULT CONTAINERS HAVE VALUES, RUN FUNCTION AGAIN ON CLICK
 
-generateElement.onclick = function () {
-  haiku();
-};
+// generateElement.onclick = function () {
+//   haiku();
+// };
