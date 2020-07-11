@@ -1,44 +1,12 @@
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("./fonts/JetBrainsMono-Regular.woff2") format(woff2),
-    url("./fonts/JetBrainsMono-Regular.woff") format(woff);
-}
-
-@font-face {
-  font-family: "NeueHaasGroteskDisp Pro Lt";
-  src: url("./fonts/NHaasGroteskDSPro-45Lt.woff2") format("woff2"),
-    url("./fonts/NHaasGroteskDSPro-45Lt.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NeueHaasGroteskDisp Pro Md";
-  src: url("./fonts/NHaasGroteskDSPro-65Md.woff2") format("woff2"),
-    url("./fonts/NHaasGroteskDSPro-65Md.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "soyuz_groteskbold";
-  src: url("./fonts/soyuzgroteskbold-webfont.woff2") format("woff2"),
-    url("./fonts/soyuzgroteskbold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #000000;
   color: #000000;
   display: flex;
-  font-family: "NeueHaasGroteskDisp Pro Md", Arial, Helvetica, sans-serif;
+  font-family: "Nimbus Sans L", Arial, Helvetica, sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -52,7 +20,6 @@ p {
 
 label:hover,
 h2:hover,
-button:hover,
 input[type="checkbox"]:hover,
 span:hover {
   color: red;
@@ -60,7 +27,7 @@ span:hover {
 
 h2 {
   font-family: "soyuz_groteskbold", Arial, Helvetica, sans-serif;
-
+  color: #691111;
   margin: 10px 0 20px;
   text-align: left;
 }
@@ -70,7 +37,7 @@ input[type="checkbox"] {
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 20px;
   width: 350px;
   max-width: 100%;
@@ -78,7 +45,7 @@ input[type="checkbox"] {
 
 .result-container {
   background-color: black;
-  color: rgb(255, 255, 255);
+  color: #ebcf9b;
   align-items: center;
   position: relative;
   font-size: 12px;
@@ -90,8 +57,17 @@ input[type="checkbox"] {
   font-family: "JetBrains Mono", monospace;
 }
 
+#result1 {
+}
+
+#resiult2 {
+}
+
+#result3 {
+}
+
 .result-container #result :hover {
-  box-shadow: 0px 2px 10px rgb(255, 0, 0);
+  /* box-shadow: 0px 2px 10px rgb(255, 0, 0); */
 }
 
 .result-container #result {
@@ -108,14 +84,22 @@ input[type="checkbox"] {
   width: 40px;
 }
 
-.btn {
-  border: none;
-  color: #ffffff;
+#generate {
+  border: 1px dashed rgb(148, 87, 46);
+  color: #046900;
   cursor: pointer;
   font-size: 15px;
   padding: 8px 12px;
   background-color: #000000;
-  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+#clipboard {
+  border: 1px dashed rgb(255, 120, 210);
+  color: #9bebeb;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 8px 12px;
+  background-color: #000000;
 }
 
 .btn-large {
@@ -128,7 +112,7 @@ input[type="checkbox"] {
   justify-content: space-between;
   align-items: center;
   margin: 15px 0;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  /* border-bottom: 1px solid rgb(0, 0, 0); */
   padding-bottom: 10px;
 }
 
