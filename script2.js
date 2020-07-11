@@ -1033,24 +1033,6 @@ generateElement.addEventListener("click", () => {
 
 // RANDOMLY SELECT A WORD FROM EACH SYLLABLE ARRAY
 
-var rand1index = Math.floor(Math.random() * oneSyl.length);
-var rand1 = oneSyl[rand1index];
-
-var rand2index = Math.floor(Math.random() * twoSyl.length);
-var rand2 = twoSyl[rand2index];
-
-var rand3index = Math.floor(Math.random() * threeSyl.length);
-var rand3 = threeSyl[rand3index];
-
-var rand4index = Math.floor(Math.random() * fourSyl.length);
-var rand4 = fourSyl[rand4index];
-
-var rand5index = Math.floor(Math.random() * fiveSyl.length);
-var rand5 = fiveSyl[rand5index];
-
-var rand6index = Math.floor(Math.random() * sixSyl.length);
-var rand6 = sixSyl[rand6index];
-
 // MAKE POSSIBLE FUNCTION COMBINATIONS FOR EACH LINE
 
 console.log(rand1 + " " + rand2);
@@ -1067,16 +1049,34 @@ console.log(rand5 + " " + rand1 + " " + rand1);
 
 // APPEND EACH LINE TO THE RESULT
 function haiku() {
+  var rand1index = Math.floor(Math.random() * oneSyl.length);
+  var rand1 = oneSyl[rand1index];
+
+  var rand2index = Math.floor(Math.random() * twoSyl.length);
+  var rand2 = twoSyl[rand2index];
+
+  var rand3index = Math.floor(Math.random() * threeSyl.length);
+  var rand3 = threeSyl[rand3index];
+
+  var rand4index = Math.floor(Math.random() * fourSyl.length);
+  var rand4 = fourSyl[rand4index];
+
+  var rand5index = Math.floor(Math.random() * fiveSyl.length);
+  var rand5 = fiveSyl[rand5index];
+
+  var rand6index = Math.floor(Math.random() * sixSyl.length);
+  var rand6 = sixSyl[rand6index];
+
   line1.innerHTML = rand1 + " " + rand3;
   line2.innerHTML = rand5 + " " + rand2;
   line3.innerHTML = rand4;
   title.innerHTML = rand4;
-
-  //   line1.innerText = rand1 + " " + rand2;
-  //   line2.innerText = rand3 + " " + rand5;
-  //   line3.innerText = rand6 + " " + rand1 + " " + rand1;
-  //   title.innerText = rand4;
 }
+
+//   line1.innerText = rand1 + " " + rand2;
+//   line2.innerText = rand3 + " " + rand5;
+//   line3.innerText = rand6 + " " + rand1 + " " + rand1;
+//   title.innerText = rand4;
 
 // generateElement.addEventListener("click", function () {
 //   haiku();
